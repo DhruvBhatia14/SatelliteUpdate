@@ -1,0 +1,13 @@
+[package]
+name = "satellite_update"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rusqlite = "0.32.0"
+rocket = "0.5.0-rc.1"
+rocket_codegen = "0.5.0-rc.1"
+
+[dependencies.libsqlite3-sys]
+version = "0.30.0"  # or the appropriate version
+features = ["bundled"]
