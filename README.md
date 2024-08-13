@@ -8,9 +8,12 @@ The Information struct contains the necessary fields, and the addtodb function i
 
 The routes are defined using rocket's #[get("/")] attribute which can handle different HTTP get requests.
 Available routes are : 
-1. #[get("/")] 
-2. #[get("/time_r")]
-3. #[get("/time_s")]
-4. #[get("/est_time")]
-5. #[get("/cur_TLE")]
-6. #[get("/TLE_exp")]
+1. #[get("/")] - Provides the user with information regarding the routes defined.
+2. #[get("/time_r")] - Provides the time since the last message from the satellite was received.
+3. #[get("/time_s")] - Provides the time since the last message was sent to the satellite.
+4. #[get("/est_time")] - Provides the estimated time to the next satellite pass
+5. #[get("/cur_TLE")] - Provides the current TLE 
+6. #[get("/TLE_exp")] - Provides the time left until epoch
+7. #[get("/prev_com")] - Provides the last command which was sent to the satellite.
+
+
