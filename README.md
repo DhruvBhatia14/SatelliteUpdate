@@ -17,3 +17,6 @@ Available routes are :
 7. #[get("/prev_com")] - Provides the last command which was sent to the satellite.
 
 
+Note: To run this Rust project, ensure [Rust](https://www.rust-lang.org/tools/install) is installed. Then, navigate to the project's root directory and run `cargo run` in your terminal. This will compile and execute the project.
+
+
